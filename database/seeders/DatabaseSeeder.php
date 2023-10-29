@@ -5,7 +5,9 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\KategoriBerita;
+use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,9 +23,16 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        for ($i=0; $i < 100000; $i++) { 
+        User::create([
+            "name" => "ADMIN SDI",
+            "email"=> "admin@sdi.com",
+            "password" => Hash::make("teknik_hijau"),
+            "roles" => "admin"
+        ]);
+
+        for ($i=0; $i < 2; $i++) { 
             KategoriBerita::create([
-                "nama" => time()
+                "nama" => "Kategori ".$i+1 
             ]);
         }
 

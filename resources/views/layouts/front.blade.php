@@ -33,6 +33,21 @@
     @stack('meta-tag')
     @stack('addStyle')
 
+    <style>
+      a{
+        text-decoration: unset;
+      }
+      footer{
+        color: white;
+      }
+      footer img{
+        width: 70px;
+      }
+      footer a{
+        color: white;
+      }
+    </style>
+
   </head>
   <body>
     @include('includes.navbar')
@@ -41,6 +56,41 @@
         @yield('content')
     </main>
 
+    <footer class="bg__primary py-5">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-4">
+    
+            <div class="d-flex align-items-center">
+              <img src="{{asset("images/logo_circle.png")}}" class="img-fluid" alt="LOGO Sarekat Demokrasi Indonesia png">
+              <p class="color-white ms-2 mb-0">SAREKAT DEMOKRASI INDONESIA</p>
+            </div>
+            <p class="mt-3">
+              Jl. Jati Padang Raya No. 05 Pasar Minggu 
+              Jakarta Selatan.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              > Kontak Kami
+            </a>
+            <div class="mt-3">
+              <a href="" class="">
+                > Pendidikan dan Pelatihan
+              </a>
+            </div>
+            
+            <div class="mt-3">
+              <a href="" class="">
+                > Pendidikan dan Pelatihan
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

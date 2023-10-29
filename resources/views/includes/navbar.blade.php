@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg__primary text-white ">
+<nav class="navbar navbar-expand-lg bg__primary text-white navbar-dark">
   <div class="container">
-    <a class="navbar-brand text-white justify-content-center align-items-center" href="#">
+    <a class="navbar-brand text-white justify-content-center align-items-center" href="/">
         <img src="{{ asset("images/logo.png") }}" class="img__nav me-3" alt="">
         <span>
             Sarekat Demokrasi Indonesia
@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse ms-auto align-items-center" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center justify-content-center">
         <li class="nav-item me-md-4">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item me-md-4">
           <a class="nav-link" href="#">Tentang SDI</a>

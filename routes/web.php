@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/", [HomeController::class, "index"])->name("home");
+Route::get("berita/{slug}", [BeritaController::class, "detail"])->name("detail-berita");
 
 Route::get("register", [AuthController::class, "register"])->name("register");
 Route::post("prosesRegister", [AuthController::class, "prosesRegister"])->name("prosesRegister");
